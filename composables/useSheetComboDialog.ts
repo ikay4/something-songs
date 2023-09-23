@@ -5,7 +5,7 @@ import type { Sheet } from '~/types';
 
 const isOpened = ref(false);
 
-const sheetComboDrawer = new ItemDrawer<Sheet>({ drawSize: 4 });
+const sheetComboDrawer = new ItemDrawer<Sheet>({ drawSize: 5 });
 const currentSheets = computed(
   () => sheetComboDrawer.currentItems.value.map((sheet) => sheet ?? NULL_SHEET),
 );
